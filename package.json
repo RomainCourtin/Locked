@@ -1,0 +1,24 @@
+{
+  "name": "locked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainCourtin/Locked.git"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "node-nmap": "^3.0.0",
+    "ip": "^1.1.5"
+  },
+  "author": "romainCourtin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainCourtin/Locked/issues"
+  },
+  "homepage": "https://github.com/RomainCourtin/Locked#readme"
+}
