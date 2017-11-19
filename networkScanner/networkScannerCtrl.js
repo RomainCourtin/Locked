@@ -15,7 +15,8 @@ router.get('/', function(req, res, next){
   var quickscan = new nmap.nodenmap.QuickScan(ipAddress);
 
   quickscan.on('complete', function(data){
-    res.send(data) 
+    console.log('Scan complete')
+    res.json(data) 
   });
    
   quickscan.on('error', function(error){
