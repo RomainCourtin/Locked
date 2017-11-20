@@ -10,9 +10,10 @@ router.use(function timeLog (req, res, next) {
 
 router.get('/', function(req, res, next){
   var ipAddress = ip.address()+'/24'
+  //var ipAddress = '192.168.1.33'+'/24'
   console.log('Scan with IP: ', ipAddress)
-
-  var quickscan = new nmap.nodenmap.QuickScan(ipAddress);
+  
+  let quickscan = new nmap.QuickScan(ipAddress);
 
   quickscan.on('complete', function(data){
     console.log('Scan complete')
